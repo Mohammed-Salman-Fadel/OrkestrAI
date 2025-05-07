@@ -1,8 +1,8 @@
-from langchain.graphs import LangGraph, Node
-from orchestrai.agents.scraper_agent import make_scraper_agent
-from orchestrai.agents.parser_agent import make_parser_agent
-from orchestrai.agents.analyzer_agent import make_analyzer_agent
-from orchestrai.agents.writer_agent import make_writer_agent
+from langchain.graphs import StateGraph, Node
+from orkestrai.agents.scraper_agent import make_scraper_agent
+from orkestrai.agents.parser_agent import make_parser_agent
+from orkestrai.agents.analyzer_agent import make_analyzer_agent
+from orkestrai.agents.writer_agent import make_writer_agent
 
 def build_graph():
     graph = LangGraph()
