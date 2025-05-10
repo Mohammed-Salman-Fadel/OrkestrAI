@@ -5,7 +5,7 @@ from orkestrai.agents.analyzer_agent import make_analyzer_agent
 from orkestrai.agents.writer_agent import make_writer_agent
 
 def build_graph():
-    graph = LangGraph()
+    graph = StateGraph()
     # Nodes
     graph.add_node(Node("scrape", make_scraper_agent()))
     graph.add_node(Node("parse", make_parser_agent()))
